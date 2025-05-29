@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Farmie</title>
+    </head>
+    <body>
+        
+        <div class="container-fluid text-white pt-3 d-flex justify-content-evenly promo">
+            <p>Get <span>30% OFF</span> your first order</p>
+            <p>Order now and get it delivered within <span>20 minutes</span> across Ikeja</p>
+        </div>
+
+        <div class="main-body px-4">
+
+            <div class="container-fluid py-4 d-flex justify-content-between logo-navbar">
+                <img src="./Images/Logo.png" alt="" class="logo">
+                <form>
+                    <input type="text" placeholder="Search for item" class="form-control search p-2 bg-transparent text-center" >
+                </form>
+                <a href="login.html"><img src="./Images/User Icon.png" alt="" class="user-icon"></a> 
+            </div>
+    
+            <nav class="navbar navbar-expand-sm main-navbar sticky-top rounded">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button>
+
+                    <div id="menu" class="collapse navbar-collapse d-flex-sm justify-content-between">
+                     
+                        <ul class="navbar-nav">
+                            <li class="nav-item me-4"><a href="index.html" class="nav-link text-decoration-none rounded">Home</a></li>
+                            <li class="nav-item me-4"><a href="about.html" class="nav-link text-decoration-none rounded">About Us</a></li>
+                            <li class="nav-item me-4"><a href="shop.html" class="nav-link text-decoration-none rounded">Shop Now</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded">Reviews</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none">FAQs</a></li>
+                        </ul>
+
+                        <ul class="navbar-nav">
+                            
+                            <li class="nav-item me-4"><a href="signUp.html" class="nav-link text-decoration-none">Create a new account</a></li>
+                            <li class="nav-item me-4"><a href="login.html" class="nav-link text-decoration-none">Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Hero Section -->
+             <div class="container mt-5" style="max-width: 100%;">
+                <div id="main" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button data-bs-target="#main" data-bs-slide-to="0" class="active"></button>
+                        <button data-bs-target="#main" data-bs-slide-to="1"></button>
+                        <button data-bs-target="#main" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active py-5" style="background-color: #032c09; height: 200px; border-radius: 1.2rem;">
+                            <img  class="d-block m-auto" src="./Images/Stars.png" alt="">
+                            <div class="carousel-caption">
+                                <p>" Timely delivery of fresh produce. The prices are also pocket-friendly "</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item py-5" style="background-color: #032c09; height: 200px; border-radius: 1.2rem;">
+                            <img  class="d-block m-auto" src="./Images/Stars.png" alt="">
+                            <div class="carousel-caption">
+                                <p>" Prompt customer service. Easy payment and timely delivery "</p>
+                            </div>
+                        </div>
+              
+                        <div class="carousel-item py-5" style="background-color: #032c09; height: 200px; border-radius: 1.2rem;">
+                            <img  class="d-block m-auto" src="./Images/Stars.png" alt="">
+                            <div class="carousel-caption">
+                                <p>" Super convenient! I would definitely recommend to a friend. "</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <button class="carousel-control-prev" data-bs-target="#main" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                       <button class="carousel-control-next" data-bs-target="#main" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>   
+                </div>
+             </div>  
+
+             <!-- Reviews -->
+              <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-6" style="height: 300px;">
+                        <img src="./Images/vegetables-fruits-background (1).png" alt="" style="height: 100%;">
+                    </div>
+
+                    <div class="col-sm">
+                        <div id="accordion">
+                            <div class="card mb-1" style="background-color: #032c09; color: white;">
+                                <div class="card-header" style="border-color: rgba(255, 166, 0, 0.185);">
+                                    <a href="#delivery" class="btn fw-bold" data-bs-toggle="collapse">Can I place an order outside Ikeja? </a>
+                                </div>
+
+                                <div id="delivery" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="ps-3">No, we currently do not handle deliveries outside Ikeja.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-1" style="background-color: #032c09; color: white;">
+                                <div class="card-header" style="border-color: rgba(255, 166, 0, 0.185);">
+                                    <a href="#prices" class="btn fw-bold text-left" data-bs-toggle="collapse">Are your produce more affordable than the average market? </a>
+                                </div>
+
+                                <div id="prices" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="ps-3">Of course! Produce are bought directly from farmers and made available to consumers at a very reasonable price</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-1" style="background-color: #032c09; color: white;">
+                                <div class="card-header" style="border-color: rgba(255, 166, 0, 0.185);">
+                                    <a href="#payment" class="btn fw-bold" data-bs-toggle="collapse">Are payment on delivery options available? </a>
+                                </div>
+
+                                <div id="payment" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="ps-3">No. However, customers are encouraged to examine the package on delivery. If not satisfied, refunds would be processed within 24hrs of the goods being returned. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                             <div class="card" style="background-color: #032c09; color: white;">
+                                <div class="card-header" style="border-color: rgba(255, 166, 0, 0.185);">
+                                    <a href="#quality" class="btn fw-bold" data-bs-toggle="collapse">Can I order fresh fruits? </a>
+                                </div>
+
+                                <div id="quality" class="collapse" data-bs-parent="#accordion">
+                                    <div class="card-body">
+                                        <p class="ps-3">Yes you can! We at farmie take pride in being able to delivery fresh farm produce within a short time frame. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+              </div>
+        </div>
+
+      
+        
+        <footer class="d-flex flex-wrap justify-content-between align-items-center mt-4 pt-2 px-4">
+            <img src="./Images/Footer logo.png" alt="">
+            <p class="text-white mt-4">Images belong to original authors as seen on FreePik</p>
+            <img src="./Images/Social media icons.png" alt="social icons">
+        </footer>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    </body>
+</html>
