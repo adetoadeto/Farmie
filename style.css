@@ -7,10 +7,12 @@
     --green-500: #044d10;
     --green-700: #032c09;
     --orange: #ffa500;
+    --white: white;
     --transparent-white: #eef8ee;
     --heading: "Playfair Display", serif;
     --paragraph: "Montserrat", sans-serif;
 } 
+
 * {
     margin: 0;
     padding: 0;
@@ -35,43 +37,19 @@ a {
 li {
     list-style: none;
 }
-/* ------------------------------------------ */
-.promo {
-    background-color: var(--green-700);
-}
-.promo p span {
-    color: orange;
-    font-weight: bold;
-}
-/* ------------------------------------------------- */
-.logo-navbar .logo {
-    object-fit: contain;
-    height: 30px;
-}
-.logo-navbar .user-icon {
-    height: 40px;
-}
-.logo-navbar .search {
-    width: 650px;
-    border-radius: 10rem;
-    border: 0.5px var(--green-300) solid;
-    font: inherit;
-}
+
 ::placeholder {
     color: var(--green-500)!important;
     font-size: 0.8rem;
 }
-/* ------------------------------------------------- */
-nav.main-navbar {
-    background-color: var(--transparent-white);
+
+nav.main-navbar a:hover,
+button.sign-up:hover,
+button.login:hover {
+    background-color: var(--green-700);
+    color: var(--white) !important;
 }
 
-nav.main-navbar a:hover {
-    background-color: var(--green-700);
-   
-    color: white !important;
-}
-/* ------------------------------------------------------ */
 .hero-section {
     background-color: var(--green-500);
     /* border-radius: 1rem; */
@@ -80,82 +58,31 @@ nav.main-navbar a:hover {
     font-family: var(--heading);
     font-size: 3rem;
 }
-.hero-section .hero-texts span {
-    color: var(--orange);
-}
-.hero-section .hero-texts a {
-    background-color: var(--orange);
-}
-.hero-section .hero-texts a:hover {
-    background-color: white;
-    color: var(--orange) !important;
-}
- 
 .hero-section img {
     border-radius: 0 1rem 1rem 0;   
-}
-
-.cart-main {
-    background-color: var(--green-700);
-}
-.cart-main ul li a {
-    border-radius: 2rem;
 }
 
 .cart-main ul li a:hover {
     background-color: var(--orange) !important;
     border: none;
 }
-.cart-main {
-    height: auto !important;
-}
-.cart-main .card {
-    height: 250px;
-    border-radius: 1rem;
-}
 
-.cart-main .card img {
-    object-fit: contain;
-}
-
-.cart-main .card .card-body button {
+.payment-channel .form-check-input:checked {
     background-color: var(--orange);
-    border-radius: 0.7rem;
-    font-size: 1.5rem;
+    border-color: var(--orange);
 }
 
-form .checkout {
-    background-color: var(--orange);
-}
-
-form .checkout:hover,
-.cart-main .card .card-body button:hover {
-    background-color: white;
-}
-
-form .checkout a:hover,
-.cart-main .card .card-body button:hover {
+.hero-section .hero-texts a:hover,
+.shop button:hover,
+.shop form a:hover,
+.payment-channel a:hover {
+    background-color: var(--white) !important;
     color: var(--orange) !important;
 }
 
-.cart-main .row {
-    margin-bottom: 7rem;
-}
-
-.cart-main #tubers img {
-    border-radius: 0.7rem;
-    object-fit: cover;
-    width: 100%;
-}
-
-
-footer {
-    background-color: var(--green-700);
-}
-
-.form-check-input:checked {
-    background-color: var(--orange);
-    border-color: var(--orange);
+.shop button a:hover,
+.shop form a:hover {
+    color: var(--orange) !important;
 }
 
 @media (max-width: 1200px) {
