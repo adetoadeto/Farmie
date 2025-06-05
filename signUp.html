@@ -9,22 +9,22 @@
     </head>
     <body>
         
-        <div class="container-fluid text-white pt-3 d-flex justify-content-evenly" style="background-color: #032c09;">
+         <div class="container-fluid text-white pt-3 d-flex flex-wrap justify-content-evenly" style="background-color: #032c09;">
             <p>Get <span class="text-warning fw-bold">30% OFF</span> your first order</p>
             <p>Order now and get it delivered within <span class="text-warning fw-bold">20 minutes</span> across Ikeja</p>
         </div>
 
         <div class="main-body px-4">
 
-            <div class="container-fluid py-4 d-flex justify-content-between">
+            <div class="container-fluid py-4 d-flex flex-wrap justify-content-between">
                 <img src="./Images/Logo.png" alt="Farmie logo" style="object-fit: contain; height: 30px;">
-                <form>
-                    <input type="text" placeholder="Search for item" class="form-control p-2 bg-transparent text-center" style="width: 650px; border-radius: 10rem; border: 0.5px #0c7b1e solid; font: inherit">
+                <form style="width: 50%;">
+                    <input type="text" placeholder="Search for item" class="form-control p-2 bg-transparent text-center" style="width: 100%; border-radius: 10rem; border: 0.5px #0c7b1e solid; font: inherit">
                 </form>
                 <a href="login.html"><img src="./Images/User Icon.png" alt="user-cart icon" style="height: 40px;"></a> 
             </div>
     
-            <nav class="navbar navbar-expand-sm sticky-top rounded" style="background-color: #eef8ee;">
+            <nav class="navbar navbar-expand-lg rounded" style="background-color: #eef8ee;">
                 <div class="container-fluid">
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
                         <span class="navbar-toggler-icon"></span> 
@@ -33,43 +33,43 @@
                     <div id="menu" class="collapse navbar-collapse d-flex-sm justify-content-between">
                      
                         <ul class="navbar-nav">
-                            <li class="nav-item me-4"><a href="index.html" class="nav-link text-decoration-none rounded">Home</a></li>
-                            <li class="nav-item me-4"><a href="about.html" class="nav-link text-decoration-none rounded">About Us</a></li>
-                            <li class="nav-item me-4"><a href="shop.html" class="nav-link text-decoration-none rounded">Shop Now</a></li>
-                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded">Reviews</a></li>
-                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none">FAQs</a></li>
+                            <li class="nav-item me-4"><a href="index.html" class="nav-link text-decoration-none rounded fw-bold">Home</a></li>
+                            <li class="nav-item me-4"><a href="about.html" class="nav-link text-decoration-none rounded fw-bold">About Us</a></li>
+                            <li class="nav-item me-4"><a href="shop.html" class="nav-link text-decoration-none rounded fw-bold">Shop Now</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded fw-bold">Reviews</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded fw-bold">FAQs</a></li>
                         </ul>
 
                         <ul class="navbar-nav">
-                            
-                            <li class="nav-item me-4"><a href="signUp.html" class="nav-link text-decoration-none">Create a new account</a></li>
-                            <li class="nav-item me-4"><a href="login.html" class="nav-link text-decoration-none">Login</a></li>
+                            <li class="nav-item me-4"><a href="signUp.html" class="nav-link text-decoration-none rounded fw-bold">Create a new account</a></li>
+                            <li class="nav-item me-4"><a href="login.html" class="nav-link text-decoration-none fw-bold">Login</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
+           
 
             <!-- Hero Section -->
-             <div class="container-fluid mt-4 hero-section" style="height: 550px; background-color: #eef8ee; border-radius: 1.2rem 0 0 1.2rem;">
-                <div class="row" style="height: 100%; border-radius: 1.2rem 0 0 1.2rem;">
-                     <div class="col-sm-6 p-0" style="height: 100%; border-radius: 1.2rem;">
-                        <img src="Images/smiley-woman-holding-box-front-view.jpg" alt="woman holding box" style="height: 100%; width: 100%; object-fit: cover; object-position: center; border-radius: 1.2rem">
+             <div class="container-fluid mt-4 hero-section rounded" style="height: auto; background-color: #eef8ee">
+                <div class="row">
+                     <div class="col-md-6 p-0 rounded">
+                        <img class="rounded" src="Images/medium-shot-farmers-with-smartphone.jpg" alt="woman holding box" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <div class="col-sm-6 text-center text-dark p-5">
-                        <h1 class="fw-bold">Sign up for an account</h1>
-                        <div class="container mt-5">
-                            <button class="btn border border-dark me-3 p-0" style="border-radius: 0.5rem;">
+                    <div class="col-md-6 text-center text-dark p-5">
+                        <h1 class="fw-bold">Create a new account</h1>
+                        <div class="container-fluid mt-5">
+                            <button class="btn border border-dark p-0 mb-3" style="border-radius: 0.5rem;">
                                 <img src="Images/google.png" alt ="google icon" class="d-inline-block">
                                 <p class="d-inline-block me-3">Sign Up With Google</p>
                             </button>
 
-                            <button class="btn border border-dark p-0" style="border-radius: 0.5rem; padding: 0.2rem;">
+                            <button class="btn border border-dark p-0 mb-3" style="border-radius: 0.5rem; padding: 0.2rem;">
                                 <img src="Images/apple logo.png" alt="apple icon" class="d-inline-block ms-2">
                                 <p class="d-inline-block me-3">Sign Up With Apple</p>
                             </button>
                         </div>
 
-                        <div class="mt-5">
+                        <div class="mt-2">
                             <div style="width: 20%; height: 1px; background-color: black; vertical-align: middle;" class="d-inline-block"></div>
                             <p class="d-inline-block mx-3">Or with email</p>
                             <div style="width: 20%; height: 1px; background-color: black; vertical-align: middle;" class="d-inline-block"></div>
@@ -85,7 +85,7 @@
 
                         <button class="btn fw-bold py-3 rounded border border-dark mb-3 sign-up" style="width: 90%;"><a href="" class="text-decoration-none">Sign Up</a></button>
 
-                        <p>Already have an account? <a href="login.html" class="fw-bold">Login</a></p>
+                        <p>Have an existing account? <a href="login.html" class="fw-bold">Login</a></p>
 
                         
                     </div>

@@ -43,7 +43,7 @@ li {
     font-size: 0.8rem;
 }
 
-nav.main-navbar a:hover,
+nav .navbar-nav a:hover,
 button.sign-up:hover,
 button.login:hover {
     background-color: var(--green-700);
@@ -58,9 +58,6 @@ button.login:hover {
     font-family: var(--heading);
     font-size: 3rem;
 }
-.hero-section img {
-    border-radius: 0 1rem 1rem 0;   
-}
 
 .cart-main ul li a:hover {
     background-color: var(--orange) !important;
@@ -74,20 +71,18 @@ button.login:hover {
 
 .hero-section .hero-texts a:hover,
 .shop button:hover,
-.shop form a:hover,
 .payment-channel a:hover {
     background-color: var(--white) !important;
     color: var(--orange) !important;
 }
 
-.shop button a:hover,
 .shop form a:hover {
-    color: var(--orange) !important;
+    background-color: var(--orange) !important;   
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     body {
         display: none;  
     }
-}
+} */
 

@@ -10,22 +10,22 @@
     
     <body>
         
-        <div class="container-fluid text-white pt-3 d-flex justify-content-evenly" style="background-color: #032c09;">
+        <div class="container-fluid text-white pt-3 d-flex flex-wrap justify-content-evenly" style="background-color: #032c09;">
             <p>Get <span class="text-warning fw-bold">30% OFF</span> your first order</p>
             <p>Order now and get it delivered within <span class="text-warning fw-bold">20 minutes</span> across Ikeja</p>
         </div>
 
         <div class="main-body px-4">
 
-            <div class="container-fluid py-4 d-flex justify-content-between">
+            <div class="container-fluid py-4 d-flex flex-wrap justify-content-between">
                 <img src="./Images/Logo.png" alt="Farmie logo" style="object-fit: contain; height: 30px;">
-                <form>
-                    <input type="text" placeholder="Search for item" class="form-control p-2 bg-transparent text-center" style="width: 650px; border-radius: 10rem; border: 0.5px #0c7b1e solid; font: inherit">
+                <form style="width: 50%;">
+                    <input type="text" placeholder="Search for item" class="form-control p-2 bg-transparent text-center" style="width: 100%; border-radius: 10rem; border: 0.5px #0c7b1e solid; font: inherit">
                 </form>
                 <a href="login.html"><img src="./Images/User Icon.png" alt="user-cart icon" style="height: 40px;"></a> 
             </div>
     
-            <nav class="navbar navbar-expand-sm sticky-top rounded" style="background-color: #eef8ee;">
+            <nav class="navbar navbar-expand-lg rounded" style="background-color: #eef8ee;">
                 <div class="container-fluid">
                     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"> 
                         <span class="navbar-toggler-icon"></span> 
@@ -34,17 +34,16 @@
                     <div id="menu" class="collapse navbar-collapse d-flex-sm justify-content-between">
                      
                         <ul class="navbar-nav">
-                            <li class="nav-item me-4"><a href="index.html" class="nav-link text-decoration-none rounded">Home</a></li>
-                            <li class="nav-item me-4"><a href="about.html" class="nav-link text-decoration-none rounded">About Us</a></li>
-                            <li class="nav-item me-4"><a href="shop.html" class="nav-link text-decoration-none rounded">Shop Now</a></li>
-                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded">Reviews</a></li>
-                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none">FAQs</a></li>
+                            <li class="nav-item me-4"><a href="index.html" class="nav-link text-decoration-none rounded fw-bold">Home</a></li>
+                            <li class="nav-item me-4"><a href="about.html" class="nav-link text-decoration-none rounded fw-bold">About Us</a></li>
+                            <li class="nav-item me-4"><a href="shop.html" class="nav-link text-decoration-none rounded fw-bold">Shop Now</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded fw-bold">Reviews</a></li>
+                            <li class="nav-item me-4"><a href="reviews_FAQ.html" class="nav-link text-decoration-none rounded fw-bold">FAQs</a></li>
                         </ul>
 
                         <ul class="navbar-nav">
-                            
-                            <li class="nav-item me-4"><a href="signUp.html" class="nav-link text-decoration-none">Create a new account</a></li>
-                            <li class="nav-item me-4"><a href="login.html" class="nav-link text-decoration-none">Login</a></li>
+                            <li class="nav-item me-4"><a href="signUp.html" class="nav-link text-decoration-none rounded fw-bold">Create a new account</a></li>
+                            <li class="nav-item me-4"><a href="login.html" class="nav-link text-decoration-none fw-bold">Login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,8 +51,8 @@
            
             <!-- Hero Section -->
             <div class="container-fluid rounded mt-3 py-1 shop" style="background-color: #032c09; height: auto !important;">
-                <div class="d-flex justify-content-between">
-                    <ul class="d-flex flex-wrap  align-item-center mb-4">
+                <div>
+                    <ul class="d-flex flex-wrap align-item-center mb-4">
                         <li><a href="#fruits" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Fruits</a></li>
                         <li><a href="#vegetables" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Vegetables</a></li>
                         <li><a href="#tubers" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Tubers</a></li>
@@ -61,108 +60,112 @@
                         <li><a href="#poultry" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Poultry</a></li>
                         <li><a href="#fish" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Fish</a></li>
                         <li><a href="#eggs" class="text-decoration-none btn btn-outline-warning text-white mt-3 me-4 px-4" style="border-radius: 2rem;">Eggs</a></li>
-                    </ul>
-
-                    <form class="mt-4">
-                      <a href="paymentChannel.html" class="fw-bold rounded text-white px-4 py-2 me-4 border-0 text-white text-decoration-none bg-warning">Check Out</a>
-                    </form>
+                         <!-- <form class="mt-4">
+                             <a href="paymentChannel.html" class="fw-bold rounded text-white px-4 py-2 me-4 border-0 text-white text-decoration-none bg-warning">Check Out</a>
+                        </form> -->
+                    </ul>  
                 </div>
                
-                <!-- fruits -->
-                <div class="row mt-4 ms-4 me-0" style="margin-bottom: 7rem;" id="fruits">
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/apples-basket.jpg" alt="basket of red apples" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
+                <div class="mt-5">
+                     <form class="mb-5 sticky-top text-center">
+                             <a href="paymentChannel.html" class="fw-bold rounded text-white px-5 py-3 text-decoration-none" style="background-color: #0c7b1e;">Check Out</a>
+                    </form>
+                    <!-- fruits -->
+                    <div class="row mt-4 ms-4 me-0" id="fruits">
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/pawpaw.jpg" alt="bunch of green banana" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/green-banana.jpg" alt="bunch of green banana" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/green-banana.jpg" alt="bunch of green banana" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/mango-still-life.jpg" alt="whole and sliced mangoes" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/mango-still-life.jpg" alt="whole and sliced mangoes" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div> 
+                    </div> 
+
+                    <!-- vegetables -->
+                    <div class="row ms-4 me-0" id="vegetables">
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="bunch of green banana" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="basket of red onions" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="basket of red onions" class="h-100" style="object-fit: contain;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>         
+                    </div> 
+
+                    <!-- tubers -->
+                    <div class="row ms-4 me-0" id="tubers">
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>
+
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
                         </div>
                     </div> 
-                </div> 
 
-                <!-- vegetables -->
-                <div class="row ms-4 me-0" style="margin-bottom: 7rem;" id="vegetables">
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="red onions" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
+                    <!-- meat -->
+                    <div class="row ms-4 me-0" id="poultry">
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="red onions" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col me-4 card border-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/straw-basket-red-onions-isolated-object-transparent-background.png" alt="red onions" class="h-100" style="object-fit: contain;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>           
-                </div> 
-
-                <!-- tubers -->
-                <div class="row ms-4 me-0" style="margin-bottom: 7rem;" id="tubers">
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>
-
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>
-
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/potato-sack-isolated-white.jpg" alt="sack of potatoes" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>           
-                </div> 
-
-                <!-- meat -->
-                <div class="row ms-4 me-0" style="margin-bottom: 7rem;" id="poultry">
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>
-
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>
-
-                    <div class="col me-4 card border-0 px-0" style="height: 250px; border-radius: 1rem;">
-                        <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
-                        <div class="card-body">
-                            <pre class="text-center"> <button class="py-2 px-5 border-0 text-white fw-bold" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem;">-  1kg  +</button> </pre>
-                        </div>
-                    </div>           
-                </div> 
+                        <div class="col-sm me-4 card border-0" style="margin-bottom: 7rem; height: 250px; border-radius: 1rem;">
+                            <img src="./Images/raw-chicken-meat.jpg" alt="raw whole chicken" class="h-100" style="object-fit: cover; border-radius: 0.7rem; width: 100%;">
+                            <div class="card-body">
+                                <button class="border-0 text-white fw-bold py-2" style="background-color: orange; border-radius: 0.7rem; font-size: 1.5rem; width: 100%;">-  1kg  +</button>
+                            </div>
+                        </div>         
+                    </div> 
+                </div>
             </div>
  
         </div>
